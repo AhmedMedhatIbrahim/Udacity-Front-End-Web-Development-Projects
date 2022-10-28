@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Weather Journal App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div id="Form" class="MainCont">
+        <div class="ColorOverlay">
+            <div align="center" class="centerContainer">
+                <h1>Web Journal App</h1>
+                <form>
+                    <label>Zip Code:</label>
+                    <input id="zip" type="text" class="Input" placeholder="Enter Zip Code here(US Codes only)">
+
+                    <label>Your Feeling:</label>
+                    <textarea id="feelings" name="Input" rows="4" placeholder="Enter how you feel here"></textarea>
+                </form>
+                <button id="generate" class="Btn">Generate</button>
+            </div>            
+        </div>
+    </div>
+<!-- Result Message Container-->
+    <div id="Messages" class="Hidden">
+        <div onclick="HideMenu()" class="ColorOverlay"></div>
+        <div id="entryHolder" class="centerContainer ZIndex">
+            <div> Temperature : <span id="temp"></span> &degC</div>
+            <div> Date : <span id="date"></span></div>
+            <div> Feeling : <span id="content"></span></div>
+            <button onclick="HideMenu()" class="Btn2">Try Again</button>
+        </div>
+    </div>
+    <script src='js/script.js'></script>
+</body>
+</html>

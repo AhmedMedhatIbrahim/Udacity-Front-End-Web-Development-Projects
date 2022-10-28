@@ -1,0 +1,16 @@
+body,html{margin:0px;padding:0px;width:100%;height: 100%;overflow: hidden;}
+*{font-family: 'Open Sans', sans-serif;outline: none;font-weight: 500;box-sizing: border-box;}
+.MainCont{width:100%;height:100vh;background-image: url('../img/Bg.jpg');background-size: cover;position: fixed;}
+.ColorOverlay{display: block;position: absolute;z-index: 2;top:0px;left:0px;width: 100%;height:100vh;background-color: rgba(0,0,0,0.6);}
+.centerContainer{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90%;max-width:360px;}
+.centerContainer h1{color:white;font-weight:800;padding:0px 0px 20px;}
+input,textarea,label{display: block;width:100%;padding:5px;margin-top:5px;}
+label{text-align:left;margin-top:20px;color:white;}
+.Btn{background-color:rgb(51, 51, 230);border:0px;padding:12px 5px;margin-top:20px;width:100%;cursor: pointer;color:white;font-weight: 600;}
+.Btn:hover{background-color: white; color: rgb(6, 6, 70);}
+#Messages{position:fixed;top:0px;left:0px;height:100vh;width:100%;z-index: 3;/*background-color: rgba(0,0,0,0.6)*/;}
+.ZIndex{z-index: 5;width:100%;max-width:300px;background-color: white;padding:30px;/*border-radius: 20px;*/}
+.ZIndex div{padding:10px 0px;}
+.Btn2{background-color: white;border:0px;padding:12px 5px;margin-top:20px;width:100%;cursor: pointer;color: rgb(6, 6, 70);;font-weight: 600;border:2px solid rgb(51, 51, 230) }
+.Btn2:hover{background-color:rgb(51, 51, 230); color: white;}
+.Hidden{display:none !important;}
