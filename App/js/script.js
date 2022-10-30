@@ -10,8 +10,8 @@ function HideMenu(){
     document.getElementById('Messages').classList.add('Hidden');
 }
 
-// API Zip Code Format
-//api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={0e4242a53a1d5718c772768681d3e601}
+/
+
 let CurrentDate= "";
 function GetTemperature(){
     CurrentDate = new Date().getDate() +'/'+ (new Date().getMonth() +1)+'/'+ new Date().getFullYear();
@@ -23,7 +23,9 @@ function GetTemperature(){
 
 //Getting the temperature using the API, and other variables from on Client Submit
 async function UseAPI(ZipCode){
-    await fetch('http://api.openweathermap.org/data/2.5/weather?zip='+ZipCode+'&appid=0e4242a53a1d5718c772768681d3e601').then(function(response){
+    
+    //Add app Id
+    await fetch('http://api.openweathermap.org/data/2.5/weather?zip='+ZipCode+'&appid=').then(function(response){
         response.json().then(function(data) {
             let API_Data = data.main.temp - 273.15;
             let Feeling = document.getElementById('feelings').value;
